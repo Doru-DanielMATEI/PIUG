@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DuoRestaurant-Meniu">
+    <meta name="author" content="Dani">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Duo Restaurant - Meniu</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+            <div class="container">
+    
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/RestaurantDuo2.png" alt="Duo Restaurant"></a> 
+    
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text" href="index.html">Yavin</a> -->
+    
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Acasă</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="meniu.html">Meniu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evenimente.html">Evenimente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terasa.html">Terasă</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Altele</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="terms.html">Termeni și condiții</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Politică de confidențialitate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="nav-item">
+                        <a class="btn-outline-sm" href="index.html#contact">Contact/Comenzi</a>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+            <div class="form-check form-switch mx-4" style="margin-top: 1%;"> <!-- Buton pentru mod light/dark -->
+                <input
+                class="form-check-input p-2"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+                onclick="myFunction()"
+                /> <p>Dark</p>
+            </div>
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Meniul nostru</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+       <!-- Basic -->
+   <div class="ex-basic-1 pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-fluid mt-5 mb-3" src="images/meniu.jpg" alt="alternative" style="border-radius: 15px; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-1 -->
+<!-- end of basic -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <input type="text" class="form-control mb-3" id="searchInput" placeholder="Caută...">
+                <ul class="list-group" id="menuList">
+                    <!-- Elemente de meniu vor fi afișate aici -->
+                </ul>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Despre Website</h6>
+                        <p class="p-small">Duo Restaurant</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Link-uri</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li><a href="terms.html">Termeni și condiții</a>, <a href="privacy.html">Politică de confidențialitate</a></li>
+                            <li><a href="index.html">Acasă</a>, <a href="meniu.html">Meniu</a>, <a href="evenimente.html">Evenimente</a>, <a href="terasa.html">Terasă</a>, <a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <p class="p-small">Așteptăm sugestiile dvs.<br><a href="mailto:contact@duo-restaurant.ro"><strong>contact@duo-restaurant.ro</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Duo Restaurant 2019-2023</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Distribuit de <a href="https://themewagon.com/">Themewagon</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    	
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var switchButton = document.getElementById("flexSwitchCheckChecked");
+        switchButton.checked = false; // Dezactivează butonul la încărcarea paginii
+    });
+   </script>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        element.classList.toggle("dark-mode .navbar .dropdown-menu");
+        element.classList.toggle("dark-mode .header");
+        element.classList.toggle("dark-mode .navbar");
+        element.classList.toggle("dark-mode .navbar.top-nav-collapse");
+        element.classList.toggle("dark-mode .form-control-textarea");
+        element.classList.toggle("dark-mode .bg-gray");
+        element.classList.toggle("dark-mode .offcanvas-collapse");
+        }        
+    </script>
+
+    <script>     //script pentru meniu restaurant cu search
+        document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('searchInput');
+        const menuList = document.getElementById('menuList');
+    
+            const menuItems = [
+    { 
+        name: 'Omletă cu Șuncă și Cașcaval',
+        price: 20,
+        image: 'images/omleta.jpg',
+        description: 'ouă – 180 g, șuncă praga – 50 g, cașcaval – 50 g, ulei de floarea soarelui – 20 g, sare, piper negru măcinat'
+    },
+    { 
+        name: 'Ciorbă de legume',
+        price: 16.99,
+        image: 'images/ciorbalegume.jpg',
+        description: 'apa – 200 g, burta de vita prefiarta si taiata fideluta – 100 g, smantana – 40 g, ceapa – 20 g, morcovi – 20 g, faina, ou, usturoi, telina radacina, otet, sare, piper boabe, concentrat vita, amidon de cartof, grasime de pui 5,9%, arome, zahar, extract din carne de vita 2,7%, pudra de ceapa, condimente, morcovi, acidifiant acid citric'
+    },
+    { 
+        name: 'Pizza Quattro Formaggi',
+        price: 25.5,
+        image: 'images/pizzaquatro.png',
+        description: 'sos de roșii, mozzarella, gorgonzola, parmezan, ricotta'
+    },
+    { 
+        name: 'Pizza Vegetariană',
+        price: 21.5,
+        image: 'images/pizzavegetariana.jpg',
+        description: 'sos de roșii, mozzarella, ciuperci, ardei gras, măsline, ceapă, oregano'
+    },
+    { 
+        name: 'Salată Caesar cu Pui',
+        price: 18.5,
+        image: 'images/salatacaesar.jpg',
+        description: 'piept de pui la grătar, salată verde, crutoane, sos Caesar'
+    },
+    { 
+        name: 'Pasta Carbonara',
+        price: 22,
+        image: 'images/pastacarbonara.jpg',
+        description: 'spaghete, bacon, ouă, parmezan, piper'
+    },
+    { 
+        name: 'File de Somon cu Lămâie',
+        price: 28.99,
+        image: 'images/somon.jpg',
+        description: 'file de somon proaspăt, lămâie, unt, mărar, sare, piper'
+    },
+    { 
+        name: 'Burger Deluxe',
+        price: 15.75,
+        image: 'images/burger.jpg',
+        description: 'chifla, carne de vită, bacon, cașcaval, salată, roșii, maioneză'
+    },
+    { 
+        name: 'Tiramisu',
+        price: 12,
+        image: 'images/tiramisu.jpg',
+        description: 'blat de biscuiți, cafea, mascarpone, ouă, cacao'
+    },
+    ];
+    
+        function displayMenuItems(items) {
+            menuList.innerHTML = '';
+    
+            items.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.classList.add('list-group-item');
+    
+                // Adaugare imagine, nume, pret si descriere la elementul de meniu
+                listItem.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center" id="meniu">
+                        <div class="flex-shrink-0">
+                            <img src="${item.image}" alt="${item.name}" class="img-fluid" style="max-width: 100px; height: auto;">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>${item.name}</h5>
+                            <p id="meniu">${item.description}</p>
+                            <p id="meniu"><strong>Preț:</strong> ${item.price} lei</p>
+                        </div>
+                    </div>
+                `;
+    
+                menuList.appendChild(listItem);
+            });
+        }
+    
+        displayMenuItems(menuItems);
+    
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+    
+            const filteredItems = menuItems.filter(item =>
+                item.name.toLowerCase().includes(searchTerm) ||
+                item.description.toLowerCase().includes(searchTerm)
+            );
+    
+            displayMenuItems(filteredItems);
+        });
+    });</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

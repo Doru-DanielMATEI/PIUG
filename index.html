@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2C6X0SSR4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D2C6X0SSR4');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DuoRestaurant-Acasă">
+    <meta name="author" content="Dani">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Duo Restaurant - Acasă</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    
+    <style>
+        video {
+          width: 40%; /* Face videoclipul să ocupe lățimea de 40% a containerului */
+          height: auto; /* Face videoclipul să aibă înălțimea proporțională la lățimea sa */
+        }
+    
+        /* Media query pentru a schimba dimensiunea videoclipului pe ecrane mici */
+        @media (max-width: 600px) {
+          video {
+            width: 80%; /* Ajustare dimensiune video pe ecrane mai mici */
+            height: auto;
+          }
+        }
+      </style>
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/RestaurantDuo2.png" alt="Duo Restaurant"></a> 
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Yavin</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Acasă</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meniu.html">Meniu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenimente.html">Evenimente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terasa.html">Terasă</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Altele</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="terms.html">Termeni și condiții</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Politică de confidențialitate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="#contact">Contact/Comenzi</a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+        <div class="form-check form-switch mx-4" style="margin-top: 1%;"> <!-- Buton pentru mod light/dark -->
+            <input
+            class="form-check-input p-2"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+            onclick="myFunction()"
+            /> <p>Dark</p>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+      
+    <!-- Header -->
+    <header id="header" class="header">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-xl-5">
+                    <div class="text-container">
+                        <h1 class="h1-large">Mâncare cu tradiție</h1>
+                        <p class="p-large">Bucură-te de o experiență culinară de neuitat în inima orașului nostru, unde aromele autentice și atmosfera primitoare se întâlnesc pentru a-ți oferi un gust pe cinste. La restaurantul nostru, fiecare masă este o călătorie culinară, iar fiecare ingredient este ales cu grijă pentru a vă aduce cele mai delicioase și proaspete preparate. Vino să descoperi gusturi noi și să creezi amintiri de neuitat alături de cei dragi. Te așteptăm cu drag la Duo Restaurant!</p>
+                        <a class="btn-solid-lg" href="#introduction">Mai multe detalii</a>
+                        <a class="btn-outline-lg" href="#contact">Contactați-ne</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-5 col-xl-7" style="margin-top: 150px;">
+                    <div class="image-container">
+                       <!---- <img class="img-fluid" src="images/header.png" alt="alternative">  -->
+
+                       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/carousel-1.jpg" class="d-block w-100" alt="Imagine 1" style="width:500px;height:400px;border-radius: 30px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/carousel-2.webp" class="d-block w-100" alt="Imagine 2" style="width:500px;height:400px;border-radius: 30px;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/carousel-3.jpg" class="d-block w-100" alt="Imagine 2" style="width:500px;height:400px;border-radius: 30px;">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                      </div>
+                      
+
+                      </div>
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Counter -->
+                    <div class="counter-container">
+                        <div class="counter-cell">
+                            <div data-purecounter-start="444" data-purecounter-end="500" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div class="counter-info">Clienti pe zi</div>
+                        </div> <!-- end of counter-cell -->
+                        <div class="counter-cell">
+                            <div data-purecounter-start="900" data-purecounter-end="1000" data-purecounter-duration="1.5" class="purecounter">1</div>
+                            <div class="counter-info">Comenzi pe site zi de zi</div>
+                        </div> <!-- end of counter-cell -->
+                        <div class="counter-cell">
+                            <div data-purecounter-start="19870" data-purecounter-end="20000" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div class="counter-info">Review-uri cu nota maxima pe Google Maps</div>
+                        </div> <!-- end of counter-cell -->
+                         <!-- end of counter-cell -->
+                    </div> <!-- end of counter-container -->
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <video autoplay muted loop controls>
+            <source src="images/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> 
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Introduction -->
+    <div id="introduction" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9">
+                    <h2>Povestea noastră</h2>
+                    <p>Bine ați venit la Duo Restaurant, locul unde pasiunea pentru gusturi rafinate și bucuria întâlnirii se împletesc într-o poveste culinară unică. 
+                        Fondat în inima orașului Timișoara, din 2019 Duo Restaurant este punctul de referință pentru cei care caută o experiență gastronomică de neuitat. 
+                        Noi credem în forța gusturilor autentice și a inovației, iar asta se reflectă în fiecare preparat pregătit cu dragoste. 
+                        Situat chiar în inima orașului nostru iubit, Duo Restaurant este nu doar o destinație culinară, ci și un loc unde se adună pasionații de gusturi și cei care apreciază ambianța primitoare. 
+                        Noaptea sau ziua, suntem aici să vă servim cu cele mai proaspete ingrediente și să vă răsfățăm cu specialități culinare care îmbină tradiția cu modernul. 
+                        Înființat cu o dragoste sinceră pentru gastronomie, Duo Restaurant a devenit rapid cel mai tare loc din oraș, un loc unde se îndeplinesc dorințele fiecărui client. 
+                        Vă invităm să faceți parte din povestea noastră și să descoperiți gusturi unice, ospitalitate caldă și experiența autentică Duo Restaurant. 
+                        Vă așteptăm cu inima deschisă și cu farfuriile pline de delicii culinare.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of introduction -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="text-container">
+                        <h2>Restaurant interior</h2>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Ambianță elegantă și relaxantă</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Culorile calde și design-ul contemporan creează un cadru primitor pentru o experiență gastronomică de neuitat</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Decorul subliniază atenția noastră la detalii și dragostea pentru estetică</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Oferim clienților noștri un mediu perfect pentru a savura preparatele noastre delicioase</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg" href="meniu.html">Ofertă meniu</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h2>Serviciile noastre</h2>
+                        <p>Îți oferim servicii profesionale și produse premium. Creativitatea și calitatea serviciilor reprezintă punctul nostru forte.</p>
+                        <p>Suntem o echipă dedicată și ne respectăm promisiunile făcute.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Restaurant: Întotdeauna folosim ingrediente alese cu grijă de către bucătarii noștri talentați pentru a pregăti cu multă pasiune cele mai gustoase preparate culinare.</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Evenimente: Atunci când două suflete se găsesc, emoția întâlnirii se sărbătorește așa cum se cuvine, iar la noi știm exact cum să vă organizăm nunta în așa fel încât să fiți fără griji, liberi să vă bucurați de această zi atât de specială!</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Terasa: Când este cald afară știm ce îți dorești. O seară de relaxare in aer liber alături de prieteni sau cei dragi. La noi ai parte de cele mai gustoase răcoritoare.</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="card-container" style="margin-top: 250px; ">
+
+                        <!-- Card -->
+                        <a href="meniu.html"> <div class="card">
+                            <div class="card-icon">
+                                <span class="fas fa-utensils"></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Meniu Restaurant</h5>
+                            </div>
+                        </div></a>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <a href="evenimente.html"> <div class="card">
+                            <div class="card-icon">
+                                <span class="fas fa-calendar-day"></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Evenimente</h5>
+                            </div>
+                        </div></a>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <a href="terasa.html"> <div class="card">
+                            <div class="card-icon">
+                                <span class="fas fa-wine-glass"></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Terasa</h5>
+                            </div>
+                        </div></a>
+                        <!-- end of card -->
+
+                    </div> <!-- end of container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="text-container">
+                        <h2>Terasa exterior</h2>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Mobilier confortabil</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Terasa oferă o oază de frumusețe naturală și liniște în mijlocul orașului</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Savurați preparatele noastre delicioase în aer liber</div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-square"></i>
+                                <div class="flex-grow-1">Răcoritoare delicioase</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg" href="meniu.html">Răcoritoare/Băuturi</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-2.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+
+
+    <!-- Invitation -->
+    <div class="basic-4 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Descoperă lumea deliciilor culinare cu doar câteva clicuri! Comandă online și experimentează meniul nostru bogat în confortul casei tale.</h4>
+                    <a class="btn-solid-lg" href="#contact">Comandă simplu și rapid</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of invitation -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 bg-gray">
+        <img class="quotes-decoration" src="images/quotes.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-1.png" alt="alternative">
+                                    <p class="testimonial-text">“Salut, sunt Daniel Pop, patronul mândru al Restaurantului Duo. În 2019, am început această călătorie culinară plină de pasiune și visuri mari. Am pus suflet și muncă pentru a construi un loc în care oamenii să se simtă ca acasă, înconjurându-i cu o atmosferă primitoare și mâncare delicioasă. Așteptăm cu nerăbdare să continuăm să împărtășim această poveste culinară cu voi, cu dragoste și pasiune, în fiecare zi care vine. Vă mulțumim pentru că sunteți alături de noi în această călătorie culinară minunată.”</p>
+                                    <div class="testimonial-author">Daniel Pop</div>
+                                    <div class="testimonial-position">Patron restaurant</div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-2.png" alt="alternative">
+                                    <p class="testimonial-text">“Cu o mână pricepută și o inimă plină de pasiune, eu, bucatarul vostru grijuliu și talentat împletesc fiecare preparat cu dragoste și dedicare. Trasnform ingredientele simple în adevărate opere de artă culinară. În fiecare fel pe care îl pregătesc, adaug o notă de bucurie și pasiune, transformând fiecare masă într-un festin de arome și sentimente special pentru dumneavoastră.”</p>
+                                    <div class="testimonial-author">Ioan Florescu</div>
+                                    <div class="testimonial-position">Chef</div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-3.png" alt="alternative">
+                                    <p class="testimonial-text">“Am o atitudine pozitivă și îmi place să ajut oamenii, ceea ce aduce plus valoare restaurantului. Sunt responsabilă de preluarea comenzilor, de servirea mâncării și a băuturilor, de gestionarea plăților și mă asigur că sunteți mulțumiți de experiența dumneavoastră în restaurantul nostru.”</p>
+                                    <div class="testimonial-author">Gabriela Dunca</div>
+                                    <div class="testimonial-position">Chelner</div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-1">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/contact.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Contactează-ne pentru a face o comandă sau pentru orice problemă</h2>
+
+                        <!-- Contact Form -->
+                        <form id="myForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" placeholder="Nume și prenume" id="nume" required>
+                                <div class="invalid-feedback">
+                                    Introduceți nume și prenume.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" placeholder="Adresa livrare *doar pentru comenzi">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" placeholder="Email" id="mail" required>
+                                <div class="invalid-feedback">
+                                    Introduceți mail valid.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" placeholder="Telefon *doar pentru comenzi" id="telefon">
+                                <div class="invalid-feedback">
+                                    Introduceți un număr de telefon valid (10 cifre).
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" placeholder="Mesaj/produse comandă" id="mesaj" required></textarea>
+                                <div class="invalid-feedback">
+                                    Introduceți un mesaj.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="form-control-submit-button" onclick="validateForm()">Trimite</button>
+                            </div>
+                        </form>
+                        <!-- end of contact form -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Despre Website</h6>
+                        <p class="p-small">Duo Restaurant</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Link-uri</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li><a href="terms.html">Termeni și condiții</a>, <a href="privacy.html">Politică de confidențialitate</a></li>
+                            <li><a href="index.html">Acasă</a>, <a href="meniu.html">Meniu</a>, <a href="evenimente.html">Evenimente</a>, <a href="terasa.html">Terasă</a>, <a href="#contact">Contact</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <p class="p-small">Așteptăm sugestiile dvs.<br><a href="mailto:contact@duo-restaurant.ro"><strong>contact@duo-restaurant.ro</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Duo Restaurant 2019-2023</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Distribuit de <a href="https://themewagon.com/">Themewagon</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    	
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var switchButton = document.getElementById("flexSwitchCheckChecked");
+        switchButton.checked = false; // Dezactivează butonul la încărcarea paginii
+    });
+   </script>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        element.classList.toggle("dark-mode .navbar .dropdown-menu");
+        element.classList.toggle("dark-mode .header");
+        element.classList.toggle("dark-mode .navbar");
+        element.classList.toggle("dark-mode .navbar.top-nav-collapse");
+        element.classList.toggle("dark-mode .form-control-textarea");
+        element.classList.toggle("dark-mode .bg-gray");
+        element.classList.toggle("dark-mode .offcanvas-collapse");
+        }
+        
+    </script>
+    
+    <script>
+function validateForm() {
+    // Obțineți valorile introduse în câmpurile telefon și email
+    var telefonInput = document.getElementById('telefon').value;
+    var emailInput = document.getElementById('mail').value;
+    var mesajInput = document.getElementById('mesaj').value;
+    var numeInput = document.getElementById('nume').value;
+    var ok=1;
+
+    // Verificați dacă câmpul telefon este gol
+    if (telefonInput.trim() === "") {
+        // Dacă este gol, nu afișați eroarea pentru telefon și opriți funcția
+        document.getElementById('telefon').classList.remove('is-invalid');
+    } else {
+        // Definiți o expresie regulată pentru a valida numerele de telefon
+        var telefonRegex = /^\d{10}$/; // Se așteaptă 10 cifre
+
+        // Verificați dacă numărul de telefon respectă expresia regulată
+        if (!telefonRegex.test(telefonInput)) {
+            // Dacă nu, afișați un mesaj de eroare pentru telefon și opriți funcția
+            document.getElementById('telefon').classList.add('is-invalid');
+            ok=0;
+        } else {
+            // Dacă este valid, eliminați orice mesaj de eroare anterioară pentru telefon
+            document.getElementById('telefon').classList.remove('is-invalid');
+        }
+    }
+
+    // Verificați dacă câmpul email este gol
+     
+        // Definiți o expresie regulată pentru a valida adresele de email
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Verificați dacă adresa de email respectă expresia regulată
+        if (!emailRegex.test(emailInput)) {
+            // Dacă nu, afișați un mesaj de eroare pentru email și opriți funcția
+            document.getElementById('mail').classList.add('is-invalid');
+            ok=0;
+        } else {
+            // Dacă este validă, eliminați orice mesaj de eroare anterioară pentru email
+            document.getElementById('mail').classList.remove('is-invalid');
+        }
+
+    // Verificați dacă câmpul mesaj este gol
+    
+        if (mesajInput.trim() === "") {            
+            document.getElementById('mesaj').classList.add('is-invalid');
+            ok=0;}
+
+    // Verificați dacă câmpul nume este gol
+    
+        if (numeInput.trim() === "") {            
+            document.getElementById('nume').classList.add('is-invalid');
+            ok=0;}
+    if(ok==0) return;
+    // Dacă ați ajuns aici, înseamnă că toate verificările au trecut, puteți trimite formularul
+    document.getElementById('myForm').submit();
+}
+
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
