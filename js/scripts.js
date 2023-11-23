@@ -103,3 +103,45 @@ function topFunction() {
 	document.body.scrollTop = 0; // for Safari
 	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+/* Help Button */
+document.addEventListener('DOMContentLoaded', function () {
+    // Obține elementele necesare
+    var openModalBtn = document.getElementById('openModalBtn');
+    var helpModal = document.getElementById('helpModal');
+    var closeModalBtn = document.getElementById('closeModalBtn');
+
+    // Deschide modalul la apăsarea butonului
+    openModalBtn.addEventListener('click', function () {
+        helpModal.style.display = 'block';
+    });
+
+    // Închide modalul la apăsarea butonului de închidere
+    closeModalBtn.addEventListener('click', function () {
+        helpModal.style.display = 'none';
+    });
+
+    // Închide modalul dacă se apasă în afara acestuia
+    window.addEventListener('click', function (event) {
+        if (event.target === helpModal) {
+            helpModal.style.display = 'none';
+        }
+    });
+});
+
+
+/* Help Menu*/
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+			panel.style.display = "none";
+		} else {
+			panel.style.display = "block";
+		}
+	});
+}
