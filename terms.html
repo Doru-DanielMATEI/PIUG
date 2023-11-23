@@ -47,6 +47,42 @@
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
+     <!-- Modal -->
+     <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Meniu de Ajutor</h2>
+            <p>Întrebări adresate frecvent (FAQ)</p>
+    
+            <!-- Meniu 1 -->
+            <div class="faq">
+                <button class="accordion">În cât timp mi se va livra mâncarea comandată prin formularul de contact?</button>
+                <div class="panel">
+                    <p style="margin-top: 30px;">Comanda va ajunge la dumneavoastră în maximul 1 oră de la momentul plasării.</p>
+                </div>
+            </div>
+
+            <!-- Meniu 2 -->
+            <div class="faq">
+                <button class="accordion">Se pot crea și meniuri personalizate?</button>
+                <div class="panel">
+                    <p style="margin-top: 30px;">Da, suntem cunoscuți pentru adaptarea noastră față de nevoile oricărui client.</p>
+                </div>
+            </div>
+
+            <!-- Meniu 3 -->
+            <div class="faq">
+                <button class="accordion">Există locuri de parcare disponibile?</button>
+                <div class="panel">
+                    <p style="margin-top: 30px;">Da, dispunem de o parcare cu un număr ridicat de locuri.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <!-- end of modal -->
+
        <!-- Navigation -->
        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
         <div class="container">
@@ -282,11 +318,15 @@
 <!-- end of copyright -->
 
 
-<!-- Back To Top Button -->
-<button onclick="topFunction()" id="myBtn">
-    <img src="images/up-arrow.png" alt="alternative">
-</button>
-<!-- end of back to top button -->
+    <!-- Back To Top and Help Buttons -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="Back to Top Button">
+    </button>
+
+    <button id="openModalBtn">
+        <img src="images/question-mark.png" alt="Help Button">
+    </button>
+    <!-- end of back to top and help buttons -->
     
 <!-- Scripts -->
 <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
